@@ -1,0 +1,24 @@
+{
+  "songs": [
+    {
+      "id": "song1",
+      "title": "Song 1",
+      "danceability": 0.8,
+      "energy": 0.7,
+      "key": 4,
+      "loudness": -5.2,
+      "mode": 1,
+      "acousticness": 0.2,
+      "instrumentalness": 0.5,
+      "liveness": 0.1,
+      "valence": 0.6,
+      "tempo": 120.5,
+      "durationMs": 240000,
+      "timeSignature": 4,
+      "numBars": 64,
+      "numSections": 12,
+      "numSegments": 300,
+      "playListModelClass": 1
+    }
+  ]
+}
