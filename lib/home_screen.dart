@@ -16,12 +16,11 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Future<void> _loadData() async {
     try {
-      // Load the JSON data from the asset file
+
       String data = await rootBundle.loadString('assets/playlist.json');
       Map<String, dynamic> jsonData = jsonDecode(data); // Parse as a Map
 
       List<dynamic> playlistData = jsonData.values.toList();
-      // Now you can parse the data into a PlayListModel object directly
       setState(() {
         _songList = playlistData.map((json) => PlayListModel.fromJson(json)).toList();
       });
@@ -53,7 +52,7 @@ class _HomeScreenState extends State<HomeScreen> {
           return ListTile(
             title: Text(model.title['en'] ?? 'Unknown'),
             subtitle: Text('Danceability: ${model.danceability['value']}'),
-            // Add more widgets to display other properties
+
           );
         },
       ),
